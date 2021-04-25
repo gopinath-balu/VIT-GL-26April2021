@@ -1,5 +1,5 @@
-language: python3
-cache: pip3
+language: python
+cache: pip
 
 python:
     - "3.9"
@@ -13,7 +13,7 @@ install:
     - mv reveal.js-master reveal.js
 
 script:
-    - jupyter nbconvert notebook.ipynb --to slides --reveal-prefix=reveal.js
+    - jupyter nbconvert nb.ipynb --to slides --reveal-prefix=reveal.js
 
 after_success: |
     if [ -n "$GITHUB_API_KEY" ]; then
