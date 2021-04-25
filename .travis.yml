@@ -1,5 +1,5 @@
-language: python3
-cache: pip3
+language: python
+cache: pip
 
 python:
     - "3.9"
